@@ -1,7 +1,7 @@
 {
   "name": "yargs-get-help",
   "description": "Get the help output from a yargs instance",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "keywords": [
     "yargs",
     "get",
