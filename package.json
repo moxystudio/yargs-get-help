@@ -6,7 +6,9 @@
     "yargs",
     "get",
     "help",
-    "usage"
+    "usage",
+    "jest",
+    "snapshot"
   ],
   "author": "André Cruz <andre@moxy.studio>",
   "homepage": "https://github.com/moxystudio/yargs-get-help",
