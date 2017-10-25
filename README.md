@@ -77,7 +77,7 @@ Available options:
 - `normalize`: Normalizes the output, unifying things like terminal sizes, locale, $0 and ansi-codes (defaults to `true`)
 
 
-**NOTE:** This packages mutates the passed `yargs` instance. If this is a problem, please consider using [yargs/yargs](https://github.com/moxystudio/yargs-get-help/blob/7d797ca29c49e6ffd27c496356657e19a8973069/test/index.spec.js#L3) instead.
+**NOTE:** This package mutates the passed `yargs` instance. If this is a problem, please consider using [yargs/yargs](https://github.com/moxystudio/yargs-get-help/blob/7d797ca29c49e6ffd27c496356657e19a8973069/test/index.spec.js#L3) instead.
 
 
 ## Tests
