@@ -36,7 +36,6 @@ import yargs from 'yargs';
 import getHelp from 'yargs-get-help';
 
 yargs
-.strict()
 .option('include', { type: 'boolean', describe: 'This is the include option' });
 
 const help = getHelp(yargs);
