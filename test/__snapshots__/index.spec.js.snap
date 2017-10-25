@@ -17,7 +17,7 @@ exports[`should return the help even if help is disabled 1`] = `
 `;
 
 exports[`should return the help for a sub-command 1`] = `
-"jest serve
+"cli serve
 
 Start the server
 

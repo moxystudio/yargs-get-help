@@ -2,6 +2,18 @@
 
 const stripAnsi = require('strip-ansi');
 
+function normalizeTerminalWidth(yargs) {
+    yargs.wrap(100);
+}
+
+function normalizeLocale(yargs) {
+    yargs.locale('en');
+}
+
+function normalizeDollarZero(yargs) {
+    yargs.$0 = 'cli';
+}
+
 function yargsGetHelp(yargs, args, options) {
     let err;
     let output;
@@ -17,9 +29,11 @@ function yargsGetHelp(yargs, args, options) {
         normalize: true,
     }, options);
 
-    // Normalize terminal width
+    // Apply normalization to yargs
     if (options.normalize) {
-        yargs.wrap(100);
+        normalizeTerminalWidth(yargs);
+        normalizeLocale(yargs);
+        normalizeDollarZero(yargs);
     }
 
     // Grab the help
@@ -34,7 +48,12 @@ function yargsGetHelp(yargs, args, options) {
         throw err;
     }
 
-    return options.normalize ? stripAnsi(output) : output;
+    // Apply normalization to the output
+    if (options.normalize) {
+        output = stripAnsi(output);
+    }
+
+    return output;
 }
 
 module.exports = yargsGetHelp;
