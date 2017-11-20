@@ -17,12 +17,15 @@
     "url": "git@github.com:moxystudio/yargs-get-help.git"
   },
   "license": "MIT",
+  "main": "index.js",
+  "files": [],
   "scripts": {
     "lint": "eslint .",
     "test": "jest --env node --coverage",
-    "precommit": "lint-staged",
     "prerelease": "npm t && npm run lint",
-    "release": "standard-version"
+    "release": "standard-version",
+    "precommit": "lint-staged",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "standard-version": {
     "scripts": {
@@ -30,9 +33,19 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^4.3.0",
+    "@commitlint/config-angular": "^4.3.0",
     "eslint": "^4.3.0",
     "eslint-config-moxy": "^4.0.0",
     "husky": "^0.14.3",
