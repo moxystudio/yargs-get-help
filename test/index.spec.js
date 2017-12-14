@@ -19,6 +19,15 @@ it('should return the help even if help is disabled', () => {
     expect(getHelp(yargsInstance)).toMatchSnapshot();
 });
 
+it('should return the help correctly if it has an alias', () => {
+    const yargsInstance = yargs()
+    .help()
+    .alias('help', 'h')
+    .option('include', { type: 'boolean', describe: 'This is the include option' });
+
+    expect(getHelp(yargsInstance)).toMatchSnapshot();
+});
+
 it('should return the help for a sub-command', () => {
     const yargsInstance = yargs()
     .command('serve', 'Start the server', (yargs) => {

@@ -36,10 +36,14 @@ function yargsGetHelp(yargs, args, options) {
         normalizeDollarZero(yargs);
     }
 
-    // Grab the help
-    yargs
-    .help()
-    .parse([...args, '--help'], (err_, parsed, output_) => {
+    // Activate help if not yet activated
+    // This way the help order is kept and any alias preserved
+    if (!yargs.getOptions().boolean.includes('help')) {
+        yargs.help();
+    }
+
+    // Get the help output
+    yargs.parse([...args, '--help'], (err_, parsed, output_) => {
         err = err_;
         output = output_;
     });
