@@ -55,6 +55,6 @@
     "yargs": "^11.0.0"
   },
   "dependencies": {
-    "strip-ansi": "^4.0.0"
+    "strip-ansi": "^5.0.0"
   }
 }
