@@ -1,6 +1,6 @@
 # yargs-get-help
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url] [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url] 
 
 [npm-url]:https://npmjs.org/package/yargs-get-help
 [npm-image]:http://img.shields.io/npm/v/yargs-get-help.svg
@@ -13,8 +13,6 @@
 [david-dm-image]:https://img.shields.io/david/moxystudio/yargs-get-help.svg
 [david-dm-dev-url]:https://david-dm.org/moxystudio/yargs-get-help?type=dev
 [david-dm-dev-image]:https://img.shields.io/david/dev/moxystudio/yargs-get-help.svg
-[greenkeeper-image]:https://badges.greenkeeper.io/moxystudio/yargs-get-help.svg
-[greenkeeper-url]:https://greenkeeper.io
 
 Get the help output from a yargs instance.
 
