@@ -3,10 +3,10 @@
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
 
 [npm-url]:https://npmjs.org/package/yargs-get-help
-[npm-image]:http://img.shields.io/npm/v/yargs-get-help.svg
-[downloads-image]:http://img.shields.io/npm/dm/yargs-get-help.svg
+[npm-image]:https://img.shields.io/npm/v/yargs-get-help.svg
+[downloads-image]:https://img.shields.io/npm/dm/yargs-get-help.svg
 [travis-url]:https://travis-ci.org/moxystudio/yargs-get-help
-[travis-image]:http://img.shields.io/travis/moxystudio/yargs-get-help/master.svg
+[travis-image]:https://img.shields.io/travis/moxystudio/yargs-get-help/master.svg
 [codecov-url]:https://codecov.io/gh/moxystudio/yargs-get-help
 [codecov-image]:https://img.shields.io/codecov/c/github/moxystudio/yargs-get-help/master.svg
 [david-dm-url]:https://david-dm.org/moxystudio/yargs-get-help
